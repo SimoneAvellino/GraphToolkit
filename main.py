@@ -246,7 +246,7 @@ def sub_database(
         subgraph = g.extract_subgraph_by_edge_count(start_node_id, num_edges)
         print(f" done. {subgraph}")
         # Wrap extracted graph with an id so saver can serialize it
-        sub_db.add_graph(subgraph)
+        sub_db.add_graph(DBGraph(subgraph, g.get_graph_id()))
 
     print("Saving sub-database...", end="")
     saver.save_db(sub_db, output_path)
