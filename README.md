@@ -23,14 +23,6 @@ python main.py --help # show the list of commands
 python main.py [command] --help # show parameters for [command] and a brief description
 ```
 
-### Common Arguments
-
--   `input_path`: path to the source graph/database file.
--   `input_format`: input format enum from `reader.InputFormat` (see `reader/` strategies).
--   `output_path`: destination file path. Some commands allow `None` to auto-name.
--   `output_format`: output format enum from `saver.OutputFormat` (see `saver/` strategies).
--   Strategy enums live under `generator.graphs.types`, `generator.labels.types`, `distributions.strategy`, `reify.types`, `alter`, etc. Use `--help` to see allowed values.
-
 ## Commands
 
 ### convert
