@@ -7,7 +7,7 @@ A small toolkit for generating, converting, and manipulating graphs and graph da
 ## Installation
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/SimoneAvellino/GraphToolkit
 cd graph_generator
 python -m venv .venv
 source .venv/bin/activate  # Windows: .venv\\Scripts\\activate
